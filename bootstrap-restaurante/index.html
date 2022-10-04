@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LeFrance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#heroSlider">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Vantagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Chefes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feedback">Avaliações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+
+                </ul>
+                <a href="#" class="btn btn-brand">Reserva Online</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item text-center bg-cover vh-100 active slide-1">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">Bem vindo ao LeFrance!</h6>
+                            <h1 class="display-1 my-3 fw-bold text-white">O Melhor da Culinaria Francesa</h1>
+                            <a href="#" class="btn btn-brand">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item text-center bg-cover vh-100 slide-2">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">Bem vindo ao LeFrance!</h6>
+                            <h1 class="display-1 my-3 fw-bold text-white">Saboroso & Delicioso</h1>
+                            <a href="#" class="btn btn-brand">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Voltar</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Proximo</span>
+        </button>
+    </div>
+
+    <section id="menu" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Menu LeFrance</h1>
+                    <p>Um menu inteiro baseado na culinaria francesa com diversos sabores para voce se deliciar!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                        type="button" role="tab" aria-controls="pills-all" aria-selected="true">Pratos</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-breakfast-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast"
+                        aria-selected="true">Bebidas</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch"
+                        type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Porções</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner"
+                        type="button" role="tab" aria-controls="pills-dinner" aria-selected="true">Sobremesas</button>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                    tabindex="0">
+
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_8.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Camarão</a></h5>
+                                    <p class="small">Delicioso prato feito com camarões frescos para você e sua familia saborear!</p>
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                        <span>4.8</span><hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_1.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Carpaccio</a></h5>
+                                    <p class="small">Um belo prato feito com salada fresca para você e sua familia saborear!</p>
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                        <span>4.5</span><hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_2.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Espaguete</a></h5>
+                                    <p class="small">O clássico prato feito com macarrão para você e sua familia saborear!</p>
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                        <span>4.7</span><hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_3.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>                                      
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Filé de Frango</a></h5>
+                                    <p class="small">Esse prato é feito com frango frescos para você e sua familia saborear!</p>
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                        <span>4.3</span><hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_4.jpg" alt="">
+                                <div class="menu-item-content p-4">                                   
+                                    <h5 class="mt-1 mb-2"><a href="#">Ostras</a></h5>
+                                    <p class="small">Este prato é feito com ostras frescas para você e sua familia saborear!</p>
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                        <span>4.5</span><hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_5.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Niguiri</a></h5>
+                                    <p class="small">Um belo prato que é feito com camarões frescos para você e sua familia saborear!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </span>
+                                            <span>4.7</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_6.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Costela de Porco</a></h5>
+                                    <p class="small">A famosa costelinha ao molho barbecue feito para você e sua familia saborear!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </span>
+                                            <span>5.0</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/item_7.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Salada Fresca</a></h5>
+                                    <p class="small">Uma bela salda feita com varios legumes frescos para você saborear!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </span>
+                                            <span>4.9</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade show" id="pills-breakfast" role="tabpanel"
+                    aria-labelledby="pills-breakfast-tab" tabindex="0">
+                    <div class="row gy-4">
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/bebidas_1.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Suco</a></h5>
+                                    <p class="small">Deliciosos sucos de diversos sabores para refrescar o seu dia e acompanhar a sua comida!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </span>
+                                            <span>5.0</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/bebidas_2.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Chá</a></h5>
+                                    <p class="small">Temos varios sabores de chás para refrescar o seu dia e acompanhar a sua comida!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </span>
+                                            <span>4.9</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/bebidas_3.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Jack Fire & Ginger</a></h5>
+                                    <p class="small">Um belo drink para refrescar o seu dia e acompanhar a sua comida!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </span>
+                                            <span>4.8</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/bebidas_4.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Christmas Tonic</a></h5>
+                                    <p class="small">Esse drink com Gin é perfeito para refrescar o seu dia e acompanhar a sua comida!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </span>
+                                            <span>4.9</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/porc_4.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Batata Frita</a></h5>
+                                    <p class="small">Uma deliciosa e soborasa porção de batatas para você aproveitar e saborear!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </span>
+                                            <span>4.9</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/porc_2.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Frango Frito</a></h5>
+                                    <p class="small">Delicioso e soboraso porção de frango frito para você e sua familia aproveitarem!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </span>
+                                            <span>4.7</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/porc_1.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Almondegas</a></h5>
+                                    <p class="small">Essa porção de almodegas é perfeita para você aproveitar e saborear!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </span>
+                                            <span>5.0</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/porc_3.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Camarão Empanado</a></h5>
+                                    <p class="small">Uma deliciosa e soborasa porção de camarões para você aproveitar e saborear!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-half-fill"></i>
+                                            </span>
+                                            <span>4.9</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/sobremesa_1.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Sorvete</a></h5>
+                                    <p class="small">A sobremesa mais clássica para adoçar a sua vida e da sua família!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </span>
+                                            <span>5.0</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/sobremesa_2.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Torta de Morango</a></h5>
+                                    <p class="small">Essa deliciosa torta de morango é perfeita para adoçar a sua vida e da sua família!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </span>
+                                            <span>5.0</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/sobremesa_3.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Bolo de Chocolate</a></h5>
+                                    <p class="small">O queridinho do pessoal, perfeito para adoçar a sua vida e da sua família!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </span>
+                                            <span>5.0</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/images/sobremesa_4.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <h5 class="mt-1 mb-2"><a href="#">Merengue</a></h5>
+                                    <p class="small">A sobremesa mais clássica para adoçar a sua vida e da sua família!</p>
+                                        <div>
+                                            <span class="stars">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </span>
+                                            <span>5.0</span><hr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="features" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">LeFrance</h1>
+                    <p class="text-white">Prezamos que você tenha a melhor experiência da sua vida!</p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-wifi-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Wifi Aberto</h4>
+                        <p class="text-white">Oferecemos internet para qualquer cliente do LeFrance.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-timer-2-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Delivery Rápido</h4>
+                        <p class="text-white">Prezamos que a comida tenha chugue com rapidez e eficiência.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-user-5-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Atendimento</h4>
+                        <p class="text-white">Oferecemos o melhor atendimento da America Latina.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-shield-star-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">5 Estrelas</h4>
+                        <p class="text-white">Recebemos cinco estrelas michelin cumprindo os criterios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Chefes LeFrance</h1>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/images/team_01.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Henrique Fogaça</h4>
+                            <p class="mb-0">Chefe de Cozinha</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/images/team_03.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Helena Rizzo</h4>
+                            <p class="mb-0">Chefe de Cozinha</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/images/team_02.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Victor Xavier</h4>
+                            <p class="mb-0">Chefe de Cozinha</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/images/team_04.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Paola Carosella</h4>
+                            <p class="mb-0">Chefe de Cozinha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Avaliações</h1>
+                </div>
+            </div>
+
+            <div id="reviewSlider" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">Restaurante bem localizado, atendimento atencioso, ambiente agradável e típico, pratos bem elaborados e muito bem servidos, carta de vinho diversificada e valor honesto pelo conjunto! Vou voltar e apreciar outros pratos!</p>
+                                    <div class="person mt-4">
+                                        <img src="./assets/images/avatar_01.jpg" alt="">
+                                        <h4 class="mb-0 mt-2">Ana Maria</h4>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">Já fui várias vezes ao LeFrance, e de fato o atendimento não é o ponto alto do local, mas ontem fui muito bem atendida! A garçonete muito atenciosa!
+                                        A comida sempre maravilhosa! Pedi o peixe a meuniere…delicioso!
+                                        </p>
+                                    <div class="person mt-4">
+                                        <img src="./assets/images/avatar_02.jpg" alt="">
+                                        <h4 class="mb-0 mt-2">Naira Costa</h4>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Galeria LeFrance</h1>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/images/galery_1.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>01 - Outubro - 2022</p>
+                            <h4><a href="#">Aprenda a fazer um delicioso merengue
+                                </a></h4>
+                            <p>Aqui você vaia aprender como fazer um delicioso merengue para você e sua família.</p>
+                            <a href="#">Ler mais </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/images/galery_4.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>30 - Setembro - 2022</p>
+                            <h4><a href="#">Como fazer uma dieta saudável?
+                                </a></h4>
+                            <p>Venha aprender como fazer varios tipos de comidas deliciosas e saborosas sem sair da dieta.</p>
+                            <a href="#">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/images/galery_3.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>29 - Setembro - 2022</p>
+                            <h4><a href="#">Como fazer o melhor café da manhã?
+                                </a></h4>
+                            <p>Aprenda a fazer o melhor café da manhã para você e sua familia começarem o dia de bem.</p>
+                            <a href="#">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/images/galery_2.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>28 - Setembro - 2022</p>
+                            <h4><a href="#">Aprenda a fazer as melhores sobremesas 
+                                </a></h4>
+                            <p>Na LeFrance você aprende como fazer as melhores sobremesa para adoçar a sua vida.</p>
+                            <a href="#">Ler Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row g-0">
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/images/insta_post01.jpg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/images/insta_post02.jpg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/images/insta_post03.jpg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/images/insta_post04.jpg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-5">
+                    <img src="./assets/images/about_new.png" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <h1>Nossa Historia</h1>
+                    <div class="divider my-4"></div>
+                    <p>Foi inaugurado em 1881, no Largo do Paiçandu, por Carlo Cecchini, um toscano que decidiu oferecer pratos típicos da culinária italiana. Com muita tradição e bom gosto trouxe pratos com massas, frutos do mar, carnes, peixes, risotos e sobremesas.</p>
+                    <p>É um dos mais antigos restaurantes de São Paulo que já passou por diversos proprietários e endereços. Para animar os clientes, a casa realiza eventos diversos tais como festival de massas, noite do boteko, jantares, cocktail e buffet a domicílio. Conta com um cardápio farto de comidas típicas da cozinha italiana.</p>
+                    <p>Como um quiosque próximo ao rio Capibaribe por Manoel Leite. A prataria era importada da Europa com alabastros, talheres de prata, copos de cristal bacará e outros utensílios luxuosos. Conquistou políticos, intelectuais, senhores de engenho e outras personalidades da época. Foi vendido para João Lacerda, em 1910 e em 1955 passou a ser gerenciado pelos irmãos Dias.
+                        <br><br><br>
+                    <a href="#menu" class="btn btn-brand">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-cover">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-4">
+                        <img src="./assets/images/Qrispy_white.svg" class="mb-4" alt="">
+                        <p>Nos siga nas redes sociais, para ficar sempre informado e atualizado!</p><hr>
+                        <div class="social-links">
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-youtube-fill"></i></a>
+                            <a href="#"><i class="ri-google-play-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ms-auto">
+                        <h6 class="text-white mb-4">Contato</h6>
+                        <p class="mb-0">Rua Vitoria da Sintra 23</p><hr>
+                        <p class="mb-0">São Paulo - Brasil</p><hr>
+                        <p class="mb-1">(11)2084-1289</p><hr>
+                        <p class="mb-1">lefrance@gmail.com</p><hr>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="text-white mb-4">Horario de Funcionamento</h6>
+                        <p class="mb-1">Seg-Sex: 11:00 - 22:00</p><hr>
+                        <p>Sab-Dom: 11:00 - 00:00</p><hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

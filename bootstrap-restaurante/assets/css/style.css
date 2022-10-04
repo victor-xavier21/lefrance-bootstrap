@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: "Spline Sans", sans-serif;
+    color: #777;
+    line-height: 1;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: #222;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+a:hover {
+    color: #fc1507;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    
+    padding: 10px 30px;
+    border-radius: 100px;
+}
+
+.btn-brand {
+    color: #fff;
+    font-weight: 300;
+    border-color: #fc1507;
+    background-color: #fc1507;
+}
+
+.btn-brand:hover {
+    border-color: #ce190d;
+    background-color: #ce190d;
+    color: #fff;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover1.jpg);
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover2.jpg);
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before {
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0,0,0,0.6);
+    width: 70px;
+    height: 0px;
+    margin: auto;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fc1507;
+}
+
+#about .divider {
+    width: 300px;
+    height: 2px;
+    display: block;
+    background-color: #fc1507;
+}
+
+.intro-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+#menu .nav-pills .nav-link {
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#menu .nav-pills .nav-link.active {
+    background-color: #fc1507;
+    color: #ffffff;
+} 
+
+.menu-item .stars {
+    color: #fc1507;
+}
+
+#features {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../images/cover3.jpg);
+}
+
+.feature {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.feature .feature-icon {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 28px;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 200px;
+    border-radius: 100px;
+}
+
+#reviews {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover3.jpg);
+}
+.review img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.review .quote-icon {
+    font-size: 74px;
+    color: #777;
+    line-height: 1;
+}
+
+.review .stars {
+    color: #fc1507;
+}
+
+#reviews .carousel-indicators {
+    margin-bottom: -3rem;
+}
+
+
+.insta-post {
+    position: relative;
+    overflow: hidden;
+}
+
+.insta-post .insta-btn {
+    width: 50px;
+    height: 50px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 253, 253);
+    border-radius: 100px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 26px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.insta-post img {
+    transition: all 0.4s;
+}
+
+.insta-post:hover img {
+    transform: scale(1.2);
+}
+
+.insta-post:hover .insta-btn {
+    opacity: 1;
+}
+
+.blog-post img {
+    width: 40%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column;
+    }
+    .blog-post img {
+        width: 100%;
+    }
+}
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover3.jpg);
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.footer-top {
+    margin-bottom: 20px;
+}
+
+footer p,
+footer a{
+    color: rgba(255, 255, 255, 0.72);
+}
+
+footer .social-links a {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+footer img {
+    max-width: 175px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
